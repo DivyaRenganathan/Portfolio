@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Divya Portfolio</title>
+  </head>
+  <body>
+    <!----====HEADER====--->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav_logo" >Divya</a>
+            </div>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#work" class="nav_link">Work</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="lmain">
+    <!--Home-->
+    <section class="home bd-grid" id="home">
+      <div  class="home data">
+        <h1 class="home_title">Hi,<br>I'm<span class="home_title-color"> Divya</span><br>Software Tester</h1>
+        <a href="#" class="button">Contact</a>
+      
+      <div class="home_social">
+        <a href="#" class="home_social-icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="#" class="home_social-icon"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="home_img">
+        <img src="asset/img/Divya.png" alt="Image">
+      </div>
+    </div>
+    </section>
+                  <!---ABOUT-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about_container bd-grid">
+        <div class="about_img">
+          <img src="asset/img/Divya.png" alt=""> 
+        </div>
+        <div class="about_subtitle">I'm Divya</div>
+        <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius gravida magna, in euismod tortor consectetur in. Pellentesque imperdiet nulla id urna faucibus pharetra. Suspendisse lobortis convallis tellus eu rhoncus. Quisque malesuada vulputate nisl id vulputate. Sed malesuada magna nec quam porta, non pellentesque urna commodo. Vivamus ut pulvinar enim. Morbi fringilla lorem ac libero mollis semper.</p>
+      </div>
+    </section>
+    <!----===========================SKILLS=================================------------->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills_container bd-grid">
+        <div>
+          <h2 class="skills_subtitle">Professional Skills</h2>
+          <p class="skills_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies dui nisi, at rhoncus augue tincidunt sit amet. </p>
+
+          <div class="skills_data">
+            <div class="skills_name">
+              <i class='bx bxl-html5 skills_icon'></i>
+              <span class="skills_name">HTML5</span>
+            </div>
+            <div>
+              <span class="skills_percentage">90%</span>
+            </div>
+            <div class="skills_bar skills_html"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_name">
+              <i class='bx bxl-css3 skills_icon' ></i>
+              <span class="skills_name">CSS</span>
+            </div>
+            <div>
+              <span class="skills_percentage">75%</span>
+            </div>
+            <div class="skills_bar skills_css"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_name">
+              <i class='bx bxl-javascript skills_icon' ></i>
+              <span class="skills_name">Javascript</span>
+
+            </div>
+            <div>
+              <span class="skills_percentage">80%</span>
+            </div>
+            <div class="skills_bar skills_js"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---======================WORK==========================================-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
+      <div class="work_container bd-grid">
+        <div class="work_img">
+          <img src="asset/img/ecommerce-website.jpg" alt="ecomwebsite">
+        </div>
+        <div class="work_img">
+          <img src="asset/img/Bank-website.jpg" alt="Bankwebsite">
+        </div>
+      </div>
+    </section>
+    <!------====================Contact====================================-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact_container bd-grid">
+        <form action="" class="contact_form">
+          <input type="text" placeholder="Name" class="contact_input">
+          <input type="mail" placeholder="Email" class="contact_input">
+          <textarea name="" id="" clos="0" rows="10" class="contact_input"></textarea>
+          <input type="button" value="Contact" class="contact_button button">
+        </form>
+      </div>
+    </section>
+  </main>
+  <!---=========================Footer==========================================-->
+  <footer class="footer">
+    <p>Divya Renganathan</p>
+    <p>&#169;2021 all right reserved</p>
+  </footer>
+
+
+                  <!---JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--MAIN JS-->
+    <script src="asset/js/main.js"></script>
+  </body>
+</html>
