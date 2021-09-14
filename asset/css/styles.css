@@ -1,8 +1,6 @@
                         /*---GOGGLE FONTS--*/
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,600&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
+ /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');*/
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,400;1,500&display=swap');
                         /*---VARIABLES---*/
 :root{
     --header-height:2rem;
@@ -17,7 +15,7 @@
 }     
                        /*----FONTS----*/
 :root{
-    --body-font: 'Poppins',sans-serif;
+    --body-font: 'Ubuntu',sans-serif;
     --big-font-size:2rem;
     --h2-font-size: 1.25rem;
     --normal-fontsize:1rem;
@@ -58,9 +56,12 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-fontsize);
     color: var(--fourth-color);
-    background-image: linear-gradient(to bottom right,var(--second-color), var(--third-color));
-   /*
-   background-image: radial-gradient(var(--first-color), var(--third-color));*/
+    background-color: black;
+  /* background-image: linear-gradient(var(--second-color), var(--third-color));
+   
+  /* background-image: radial-gradient(var(--first-color), var(--third-color));
+   
+   background-size: cover;*/
 }       
 h1,h2,p{
     margin: 0;
@@ -191,6 +192,13 @@ img{
 /*Show*/
 .show{
     right: 0;
+}
+/*=================Screen===============*/
+.screen{
+    display: none;
+}
+.current-screen{
+    display: block;
 }
 /*Home*/
 .home{
@@ -331,11 +339,15 @@ img{
 }
 .work_container{
     row-gap: 2rem;
+    background-image: linear-gradient(var(--second-color), var(--third-color));
+    
 }
 .work_img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
-    border-radius: 50%;
+    background-color: gray;
     overflow: hidden;
+    height: 150px;
+    
 }
 .work_img img{
     transition: 1s;
@@ -371,6 +383,7 @@ img{
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
+    
 }
 /*==============================Media Queries========================*/
 @media screen and (min-width: 768px) {
@@ -445,7 +458,7 @@ img{
     }
     
     .about_container{
-        grid-template-columns: repeat(2,1fr);
+      /*  grid-template-columns: repeat(2,1fr);*/
         align-items:center;
         text-align: initial;
     }
@@ -464,6 +477,7 @@ img{
         column-gap: 2rem;
         margin: var(--mb-6);
         align-items: center;
+        height: 80%;
         
     }
     .work_img{
