@@ -194,12 +194,13 @@ img{
     right: 0;
 }
 /*=================Screen===============*/
-.screen{
-    display: none;
-}
+    .screen{
+        display: none;
+    }
 .current-screen{
     display: block;
 }
+
 /*Home*/
 .home{
     height: 100%;
@@ -213,6 +214,7 @@ img{
     align-self: center;
     position: relative;
     top: 20%;
+    margin-top: 80px;
     
 }
 .home_title{
@@ -230,10 +232,10 @@ img{
     width: max-content;
     margin-bottom: var(--mb2);
     font-size: 1.5rem;
-    color :var(--third-color);
+    color :var(--first-color);
 }
 .home_social-icon:hover{
-    color: var(--first-color);
+    color: var(--fourth-color);
 }
 .home_img{
    /* position: absolute;
@@ -339,22 +341,34 @@ img{
 }
 .work_container{
     row-gap: 2rem;
-    background-image: linear-gradient(var(--second-color), var(--third-color));
+    
     
 }
 .work_img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
-    background-color: gray;
+    background-image: linear-gradient(var(--second-color), var(--third-color));
     overflow: hidden;
     height: 150px;
     
 }
-.work_img img{
+.pname{
     transition: 1s;
     cursor: pointer;
 }
-.work_img img:hover{
+.pname:hover{
     transform: scale(1.1);
+}
+.prodes{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {color:var(--fourth-color); right:-330px; top:0px;}
+   100%  {color:var(--first-color); right:300px; top:0px;}
+   
+    
 }
 /*================Contact=================*/
 .contact_input{
