@@ -7,11 +7,17 @@
     --font-semi:600;
 }
                         /*===COLOURS====*/
-:root{
-    --first-color:#D89216;
-    --second-color:#323232 ;
+:root {
+    --first-color:#fff ;
+    --second-color:#2FDD92;
     --third-color: #000000;
-    --fourth-color:#fff;
+    --fourth-color: #2FDD92;
+    /*
+   --first-color: #fff;
+    --second-color:#091353;
+    --third-color: #00A19D;
+    --fourth-color: #000000; 
+*/
 }     
                        /*----FONTS----*/
 :root{
@@ -50,16 +56,14 @@
 }   
 html{
     scroll-behavior: smooth;
-}   
-body{
-    
+}
+body {
     font-family: var(--body-font);
     font-size: var(--normal-fontsize);
     color: var(--fourth-color);
-    background-color: black;
-  /* background-image: linear-gradient(var(--second-color), var(--third-color));
-   
-  /* background-image: radial-gradient(var(--first-color), var(--third-color));
+    background-color: #000000;
+    
+    /* background-image: radial-gradient(var(--first-color), var(--third-color));
    
    background-size: cover;*/
 }       
@@ -154,7 +158,7 @@ img{
 }
 .nav_link{
     position: relative;
-    color: #fff;
+    color: var(--third-color);
 }
 .nav_link:hover{
     position: relative;
@@ -169,7 +173,8 @@ img{
     background-color: var(--first-color);
 }
 .nav_logo{
-    color: var(--first-color);
+    color: var(--third-color);
+	font-size:1.5rem;
 }
 .nav_toggle{
     color: var(--first-color);
@@ -209,6 +214,7 @@ img{
     font-size: var(--h1-font-size);
     position: relative;
     top: 40%;
+   
 }
 .home_data{
     align-self: center;
@@ -306,7 +312,7 @@ img{
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
-    box-shadow: 0 4px 25px rgb(255 255 255 / 15%);
+    box-shadow: 0 4px 25px rgb(255 255 255 / 35%);
 }
 .skills_icon{
     font-size: 2rem;
@@ -346,14 +352,16 @@ img{
 }
 .work_img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
-    background-image: linear-gradient(var(--second-color), var(--third-color));
+    background: var(--second-color);
     overflow: hidden;
     height: 150px;
+    
     
 }
 .pname{
     transition: 1s;
     cursor: pointer;
+    color:var(--first-color); 
 }
 .pname:hover{
     transform: scale(1.1);
@@ -434,7 +442,7 @@ img{
         display: none;
     }
     .nav_link{
-        color:var(--fourth-color);
+        color:var(#00A19D);
     }
     .home{
         height: 100vh;
@@ -477,7 +485,9 @@ img{
         text-align: initial;
     }
     .skills_container{
-        
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        column-gap: 2rem;         
         align-items:center;
         text-align: initial;
         margin: var(--mb-6);
@@ -485,6 +495,9 @@ img{
     .about_img img{
         width: 300px;
     }
+    p.about_text {
+    font-size: 27px;
+     }
     .work_container{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(1,1fr);
@@ -498,7 +511,7 @@ img{
         border-radius: .5px;
         
     }
-    .work_img img{
+    ._img img{
         width: 1200px;
         height: 300px;
             object-fit: cover;
